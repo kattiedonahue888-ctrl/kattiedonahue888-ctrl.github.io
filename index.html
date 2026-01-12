@@ -1,101 +1,171 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apostlecary | Prayer Oils</title>
-
-<style>
-body{
-margin:0;
-font-family:Georgia,serif;
-background:radial-gradient(circle at top,#c7b3ff,#4b2c7a 55%,#1b102f);
-color:#f6f1ff;
-}
-header{text-align:center;padding:3rem 1.5rem}
-.logo{max-width:220px;margin:auto}
-section{padding:3rem 1.5rem;max-width:1100px;margin:auto}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
-.card{
-background:rgba(255,255,255,0.12);
-border-radius:22px;
-padding:1.6rem;
-box-shadow:0 12px 35px rgba(0,0,0,.45)
-}
-.price{font-weight:bold;margin-top:.5rem}
-.scripture{font-style:italic;margin-top:.5rem}
-.intention{font-size:.95rem;margin-top:.5rem}
-.buy{
-display:inline-block;
-margin-top:1rem;
-padding:.7rem 1.2rem;
-border-radius:999px;
-background:linear-gradient(135deg,#e9ddff,#b48cf0);
-color:#2b1450;
-text-decoration:none;
-font-weight:bold
-}
-.cta{text-align:center;background:linear-gradient(135deg,#9d7de2,#6b4fa3);border-radius:26px;color:white}
-footer{text-align:center;padding:2rem;font-size:.9rem}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apostlecary | Prayer Oils</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: radial-gradient(circle at top, #c7b3ff, #4b2c7a 55%, #1b102f);
+      color: #f6f1ff;
+    }
+    header { text-align: center; padding: 3rem 1.5rem 2rem; }
+    .logo { max-width: 220px; margin: 0 auto 1rem; }
+    h1 { font-size: 3rem; margin: 0.5rem 0; letter-spacing: 2px; }
+    section { padding: 3rem 1.5rem; max-width: 1100px; margin: auto; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+    .card {
+      background: rgba(255,255,255,0.12);
+      border-radius: 22px;
+      padding: 1.6rem;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.45);
+      backdrop-filter: blur(8px);
+    }
+    .price { font-size: 1.2rem; font-weight: bold; margin-top: 0.5rem; }
+    .scripture { font-style: italic; opacity: 0.95; margin-top: 0.6rem; }
+    .intention { margin-top: 0.5rem; font-size: 0.95rem; }
+    .buy {
+      display: inline-block; margin-top: 1rem; padding: 0.7rem 1.2rem;
+      border-radius: 999px; text-decoration: none; color: #2b1450;
+      background: linear-gradient(135deg, #e9ddff, #b48cf0);
+      font-weight: bold;
+    }
+    .cta {
+      background: linear-gradient(135deg, #9d7de2, #6b4fa3);
+      text-align: center; border-radius: 26px; color: white;
+    }
+    form { max-width: 700px; margin: auto; }
+    input, textarea {
+      width: 100%; padding: 0.8rem; margin: 0.5rem 0 1rem;
+      border-radius: 12px; border: none; font-family: Georgia, serif;
+    }
+    button {
+      background: linear-gradient(135deg, #e9ddff, #b48cf0);
+      color: #2b1450; border: none; padding: 0.8rem 1.4rem;
+      border-radius: 999px; font-size: 1rem; font-weight: bold; cursor: pointer;
+    }
+    footer { text-align: center; padding: 2rem; font-size: 0.9rem; opacity: 0.9; }
+  </style>
 </head>
+<body><header>
+  <svg class="logo" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="holoLabel" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#f6e9ff" />
+        <stop offset="30%" stop-color="#d7b9ff" />
+        <stop offset="60%" stop-color="#9f7aea" />
+        <stop offset="100%" stop-color="#5a3f8f" />
+      </linearGradient>
+      <filter id="softGlow">
+        <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+        <feMerge>
+          <feMergeNode in="coloredBlur" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+    </defs><!-- Tree of Life -->
+<circle cx="150" cy="150" r="120" fill="none" stroke="url(#holoLabel)" stroke-width="6" filter="url(#softGlow)" />
+<path d="M150 60 C95 100, 85 175, 150 230 C215 175, 205 100, 150 60" fill="none" stroke="url(#holoLabel)" stroke-width="6" />
 
-<body>
+<!-- Cross -->
+<line x1="150" y1="80" x2="150" y2="215" stroke="url(#holoLabel)" stroke-width="6" />
+<line x1="115" y1="135" x2="185" y2="135" stroke="url(#holoLabel)" stroke-width="6" />
 
-<header>
-<svg class="logo" viewBox="0 0 200 200">
-<circle cx="100" cy="100" r="85" fill="none" stroke="#c7b3ff" stroke-width="4"/>
-<line x1="100" y1="50" x2="100" y2="150" stroke="#c7b3ff" stroke-width="4"/>
-<line x1="80" y1="90" x2="120" y2="90" stroke="#c7b3ff" stroke-width="4"/>
-</svg>
-<h1>Apostlecary</h1>
-<p>Handcrafted Prayer Oils • Faith • Intention</p>
-</header>
+<!-- Name -->
+<text x="150" y="275" text-anchor="middle" font-size="26" fill="#f6e9ff" style="letter-spacing:2px;">APOSTLECARY</text>
 
-<section>
-<h2>Prayer Oils</h2>
-<div class="cards">
-
-<div class="card">
-<h3>Alabaster Prayer Oil</h3>
-<p>A reverent blend for worship.</p>
-<div class="price">$13 per bottle</div>
-<div class="scripture">Song of Songs 1:12</div>
-<div class="intention">Intention: Worship & surrender</div>
-<a class="buy" href="https://cash.app/$klb212" target="_blank">Buy with Cash App</a>
+  </svg>  <h1>APOSTLECARY</h1>
+  <p class="tagline">Alabaster • Anointing • Prayer Oils</p>
+</header><section>
+  <h2>Prayer Oils</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Alabaster Prayer Oil</h3>
+      <p>A reverent blend for worship and devotion.</p>
+      <div class="price">$13 per bottle</div>
+      <div class="scripture">“While the king was at his table, my perfume spread its fragrance.” — Song of Songs 1:12</div>
+      <div class="intention"><strong>Intention:</strong> Anointing for worship, surrender, and honor before the Lord.</div>
+      <a class="buy" href="https://cash.app/$klb212" target="_blank">Buy with Cash App</a>
+    </div><div class="card">
+  <h3>Peace Be Still</h3>
+  <p>Created to support prayer for calm and rest.</p>
+  <div class="price">$13 per bottle</div>
+  <div class="scripture">“Peace, be still.” Then the wind ceased, and there was a great calm. — Mark 4:39</div>
+  <div class="intention"><strong>Intention:</strong> Prayer for peace, anxiety relief, and rest in God’s presence.</div>
+  <a class="buy" href="https://cash.app/$klb212" target="_blank">Buy with Cash App</a>
 </div>
 
 <div class="card">
-<h3>Peace Be Still</h3>
-<p>For calm and rest.</p>
-<div class="price">$13 per bottle</div>
-<div class="scripture">Mark 4:39</div>
-<div class="intention">Intention: Peace & anxiety relief</div>
-<a class="buy" href="https://cash.app/$klb212" target="_blank">Buy with Cash App</a>
+  <h3>Be Renewed</h3>
+  <p>An uplifting blend for renewal and focus.</p>
+  <div class="price">$13 per bottle</div>
+  <div class="scripture">“Be transformed by the renewing of your mind.” — Romans 12:2</div>
+  <div class="intention"><strong>Intention:</strong> Renewal of mind, strength, clarity, and spiritual focus.</div>
+  <a class="buy" href="https://cash.app/$klb212" target="_blank">Buy with Cash App</a>
 </div>
 
-<div class="card">
-<h3>Be Renewed</h3>
-<p>For renewal and clarity.</p>
-<div class="price">$13 per bottle</div>
-<div class="scripture">Romans 12:2</div>
-<div class="intention">Intention: Renewal of mind</div>
-<a class="buy" href="https://cash.app/$klb212" target="_blank">Buy with Cash App</a>
-</div>
-
-</div>
-</section>
-
-<section class="cta">
-<h2>Shipping</h2>
-<p>$5 first bottle + $2 each additional</p>
-</section>
-
-<footer>
-© 2026 Apostlecary
-</footer>
-
-</body>
-</
-  
+  </div>
+</section><section class="cta">
+  <h2>Order & Shipping Information</h2>
+  <p>Please complete the form below after payment if you are not local.</p>
+</section><section>
+  <h2>Shipping Order Form</h2>
+  <form action="mailto:kattiedonahue888@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="Name" placeholder="Full Name" required />
+    <input type="email" name="Email" placeholder="Email Address" required />
+    <input type="text" name="Street" placeholder="Street Address" required />
+    <input type="text" name="City" placeholder="City" required />
+    <input type="text" name="State" placeholder="State" required />
+    <input type="text" name="ZIP" placeholder="ZIP Code" required />
+    <textarea name="Order Details" rows="4" placeholder="Oil name(s), quantity, and Cash App payment name" required></textarea>
+    <textarea name="Prayer Request" rows="3" placeholder="Prayer request (optional)"></textarea>
+    <button type="submit">Submit Shipping Info</button>
+  </form>
+</section><section>
+  <h2>Contact / Order Request</h2>
+  <form action="mailto:kattiedonahue888@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="Name" placeholder="Full Name" required />
+    <input type="email" name="Email" placeholder="Email Address" required />
+    <input type="text" name="Street" placeholder="Shipping Address (Street)" />
+    <input type="text" name="City" placeholder="City" />
+    <input type="text" name="State" placeholder="State" />
+    <input type="text" name="Zip" placeholder="ZIP Code" />
+    <textarea name="Order" rows="5" placeholder="Which oil(s)? Quantity? Local pickup or shipping? Prayer request (optional)"></textarea>
+    <button type="submit">Send Order Request</button>
+  </form>
+</section><section>
+  <h2>About Apostlecary</h2>
+  <p>
+    Apostlecary exists to provide prayer oils made with care, faith, and natural ingredients.
+    Each blend is handcrafted to accompany prayer, anointing, and spiritual reflection.
+  </p>
+</section><section class="cta">
+  <h2>Contact the Seller</h2>
+  <p>
+    Questions, local pickup coordination, or order help?<br>
+    Email directly at:
+  </p>
+  <p style="font-weight:bold;font-size:1.1rem;">
+    kattiedonahue888@gmail.com
+  </p>
+</section><section>
+  <h2>Shipping & Local Pickup Information</h2>
+  <p>
+    <strong>Local Pickup:</strong><br>
+    Available by arrangement. Please email after purchase to coordinate pickup time and location.
+  </p>
+  <p style="margin-top:1rem;">
+    <strong>Shipping:</strong><br>
+    Orders ship within 2–3 business days after payment is received.
+  </p>
+  <p>
+    Shipping Rates:<br>
+    • $5 for the first bottle<br>
+    • + $2 for each additional bottle
+  </p>
+</section><footer>
+  © 2026 Apostlecary • Handcrafted Prayer Oils<br>
+  Contact: kattiedonahue888@gmail.com
+</footer></body>
+</html>
